@@ -49,24 +49,49 @@
 // console.log(calculateTotalPrice(1, 3500));
 // console.log(calculateTotalPrice(12, 70));
 
-function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+
+// const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+// const message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`;
+
+// return message;
+// }
+
+// let orderedQuantity = 2;
+// orderedQuantity = 4;
+// orderedQuantity = 10;
+// let pricePerDroid = 100;
+// pricePerDroid = 300;
+// pricePerDroid = 70;
+// let deliveryFee = 50;
+// deliveryFee = 100;
+// deliveryFee = 200;
+
+// console.log(makeOrderMessage(2, 100, 50));
+// console.log(makeOrderMessage(4, 300, 100));
+// console.log(makeOrderMessage(10, 70, 200));
+function isAdult(age) {
   // Change code below this line
-  const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
-  const message = `You ordered droids worth ${totalPrice} credits. Delivery(${deliveryFee} credits) is included in total price.`;
+
+  const passed = 18;
+
   // Change code above this line
-  return message;
+  return passed;
 }
 
-let orderedQuantity = 2;
-orderedQuantity = 4;
-orderedQuantity = 10;
-let pricePerDroid = 100;
-pricePerDroid = 300;
-pricePerDroid = 70;
-let deliveryFee = 50;
-deliveryFee = 100;
-deliveryFee = 200;
+console.log(isAdult(20));
+console.log(isAdult(14));
+console.log(isAdult(8));
+console.log(isAdult(37));
+// const a = 2;
+// const b = 5;
 
-console.log(makeOrderMessage(2, 100, 50));
-console.log(makeOrderMessage(4, 300, 100));
-console.log(makeOrderMessage(10, 70, 200));
+// console.log(a > b); // false
+// console.log(b > a); // true
+// console.log(a >= b); // false
+// console.log(b >= a); // true
+
+// console.log(a < b); // true
+// console.log(b < a); // false
+// console.log(a <= b); // true
+// console.log(b <= a); // false
