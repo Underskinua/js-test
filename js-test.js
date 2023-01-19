@@ -72,17 +72,22 @@
 // console.log(makeOrderMessage(10, 70, 200));
 function isAdult(age) {
   // Change code below this line
+  let isAdult = 20;
+  isAdult = 14;
+  isAdult = 8;
+  isAdult = 37;
+  let passed = isAdult >= 18;
+  passed = isAdult <= 18;
 
-  const passed = 18;
+  return passed;
 
   // Change code above this line
-  return passed;
 }
 
-console.log(isAdult(20));
-console.log(isAdult(14));
-console.log(isAdult(8));
-console.log(isAdult(37));
+console.log(isAdult(20) >= passed);
+console.log(isAdult(14) >= passed);
+console.log(isAdult(8) >= passed);
+console.log(isAdult(37) >= passed);
 // const a = 2;
 // const b = 5;
 
