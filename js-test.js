@@ -177,24 +177,170 @@
 // console.log(makeTransaction(2000, 8, 10000));
 // console.log(makeTransaction(500, 10, 5000));
 
-function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
-  let message;
-  // Change code below this line
-  let totalPrice = pricePerDroid * orderedQuantity;
-  let credits = customerCredits - totalPrice;
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+// let message;
 
-  if (customerCredits < totalPrice) {
-    message = `Insufficient funds!`;
-  } else {
-    message = `You ordered ${orderedQuantity} droids, you have ${credits} credits left`;
-  }
+// let totalPrice = pricePerDroid * orderedQuantity;
+// let credits = customerCredits - totalPrice;
 
-  // Change code above this line
-  return message;
-}
+//  if (customerCredits < totalPrice) {
+//   message = `Insufficient funds!`;
+// } else {
+//   message = `You ordered ${orderedQuantity} droids, you have ${credits} credits left`;
+// }
 
-console.log(makeTransaction(3000, 5, 23000));
-console.log(makeTransaction(1000, 3, 15000));
-console.log(makeTransaction(5000, 10, 8000));
-console.log(makeTransaction(2000, 8, 10000));
-console.log(makeTransaction(500, 10, 5000));
+// return message;
+// }
+
+// console.log(makeTransaction(3000, 5, 23000));
+// console.log(makeTransaction(1000, 3, 15000));
+// console.log(makeTransaction(5000, 10, 8000));
+// console.log(makeTransaction(2000, 8, 10000));
+// console.log(makeTransaction(500, 10, 5000));
+
+// function checkPassword(password) {
+// const ADMIN_PASSWORD = "jqueryismyjam";
+// let message;
+//
+// if (password === null) {
+
+// message = "Canceled by user!";
+// } else if (password === "jqueryismyjam") {
+
+// message = "Welcome!";
+// } else {
+// message = "Access denied, wrong password!";
+// }
+
+// return message;
+// }
+
+// console.log(checkPassword("mangohackzor"));
+// console.log(checkPassword(null));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
+
+// function checkStorage(available, ordered) {
+// let message;
+
+// if (ordered === 0) {
+// message = "There are no products in the order!";
+// } else if (ordered >= available) {
+// message = "Your order is too large, there are not enough // items in stock!";
+// } else {
+// message = "The order is accepted, our manager will // contact you";
+// }
+
+// return message;
+// }
+
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
+// console.log(checkStorage(70, 0));
+// console.log(checkStorage(200, 20));
+// console.log(checkStorage(200, 250));
+// console.log(checkStorage(150, 0));
+
+// function isNumberInRange(start, end, number) {
+// const isInRange = number >= start && number <= end;
+
+// return isInRange;
+// }
+
+// console.log(isNumberInRange(10, 30, 17));
+// console.log(isNumberInRange(10, 30, 5));
+// console.log(isNumberInRange(20, 50, 24));
+// console.log(isNumberInRange(20, 50, 76));
+
+// function checkIfCanAccessContent(subType) {
+// const canAccessContent = subType === "pro" || subType === // "vip";
+
+// return canAccessContent;
+// }
+
+// console.log(checkIfCanAccessContent("pro"));
+// console.log(checkIfCanAccessContent("starter"));
+// console.log(checkIfCanAccessContent("vip"));
+// console.log(checkIfCanAccessContent("free"));
+
+// function isNumberNotInRange(start, end, number) {
+// const isInRange = number >= start && number <= end;
+// const isNotInRange = !isInRange;
+
+// return isNotInRange;
+// }
+
+// console.log(isNumberNotInRange(10, 30, 17));
+// console.log(isNumberNotInRange(10, 30, 5));
+// console.log(isNumberNotInRange(20, 50, 24));
+// console.log(isNumberNotInRange(20, 50, 76));
+
+// function getDiscount(totalSpent) {
+// const BASE_DISCOUNT = 0;
+// const BRONZE_DISCOUNT = 0.02;
+// const SILVER_DISCOUNT = 0.05;
+// const GOLD_DISCOUNT = 0.1;
+// let discount;
+
+// if (totalSpent >= 50000) {
+// discount = 0.1;
+// } else if (totalSpent >= 20000 && totalSpent <= 50000) {
+// discount = 0.05;
+// } else if (totalSpent >= 5000 && totalSpent <= 20000) {
+// discount = 0.02;
+// } else {
+// discount = 0;
+// }
+
+// return discount;
+// }
+
+// console.log(getDiscount(137000));
+// console.log(getDiscount(46900));
+// console.log(getDiscount(8250));
+// console.log(getDiscount(1300));
+// console.log(getDiscount(5000));
+// console.log(getDiscount(20000));
+// console.log(getDiscount(50000));
+
+/// function checkStorage(available, ordered) {
+// Change code below this line
+/// let message;
+// удаляем===
+// if (ordered > available) {
+// message = "Not enough goods in stock!";
+// } else {
+// message = "The order is accepted, our manager will // contact you";
+// }
+
+//добавляем ---//
+/// message =
+/// ordered > available
+///   ? "Not enough goods in stock!"
+///   : "The order is accepted, our manager will contact you";
+
+// Change code above this line
+/// return message;
+/// }
+
+/// console.log(checkStorage(100, 50));
+/// console.log(checkStorage(100, 130));
+/// console.log(checkStorage(200, 20));
+/// console.log(checkStorage(200, 150));
+/// console.log(checkStorage(150, 180));
+
+// function checkPassword(password) {
+// const ADMIN_PASSWORD = "jqueryismyjam";
+// let message;
+// Change code below this line
+// message =
+// password === "jqueryismyjam"
+// ? "Access is allowed"
+// : "Access denied, wrong password!";
+// Change code above this line
+// return message;
+// }
+
+// console.log(checkPassword("jqueryismyjam"));
+// console.log(checkPassword("angul4r1sl1f3"));
+// console.log(checkPassword("r3actsux"));
