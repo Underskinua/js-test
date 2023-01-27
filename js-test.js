@@ -373,37 +373,96 @@
 // console.log(getSubscriptionPrice("organization"));
 // console.log(getSubscriptionPrice("starter"));
 
-function checkPassword(password) {
-  const ADMIN_PASSWORD = "jqueryismyjam";
-  let message;
-  // Change code below this line
+// function checkPassword(password) {
+// const ADMIN_PASSWORD = "jqueryismyjam";
+// let message;
+// Change code below this line
 
-  // if (password === null) {
-  // message = "Canceled by user!";
-  // } else if (password === ADMIN_PASSWORD) {
-  // message = "Welcome!";
-  // } else {
-  // message = "Access denied, wrong password!";
-  // }
+// if (password === null) {
+// message = "Canceled by user!";
+// } else if (password === ADMIN_PASSWORD) {
+// message = "Welcome!";
+// } else {
+// message = "Access denied, wrong password!";
+// }
 
-  //=======================
-  switch (password) {
-    case "Canceled by user!":
-      value === null;
-      break;
+//=======================
+// switch (password) {
+// case null:
+// message = "Canceled by user!";
+// break;
 
-    case "Welcome!":
-      value === ADMIN_PASSWORD;
-      break;
-    case "Access denied, wrong password!":
-      // value === !ADMIN_PASSWORD;
-      break;
-  }
-  // Change code above this line
-  return message;
-}
+// case ADMIN_PASSWORD:
+// message = "Welcome!";
+// break;
 
-console.log(checkPassword("mangohackzor"));
-console.log(checkPassword(null));
-console.log(checkPassword("polyhax"));
-console.log(checkPassword("jqueryismyjam"));
+// default:
+// message = "Access denied, wrong password!";
+// }
+// Change code above this line
+// return message;
+// }
+
+// console.log(checkPassword("mangohackzor"));
+// console.log(checkPassword(null));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
+
+// function getShippingCost(country) {
+// let message;
+// Change code below this line
+
+// switch (country) {
+// case "China":
+// message = "Shipping to China will cost 100 credits";
+// break;
+
+// case "Chile":
+// message = "Shipping to Chile will cost 250 credits";
+// break;
+
+// case "Australia":
+// message = "Shipping to Australia will cost 170 credits";
+// break;
+
+// case "Jamaica":
+// message = "Shipping to Jamaica will cost 120 credits";
+// break;
+
+// default:
+// message = "Sorry, there is no delivery to your country";
+// }
+// Change code above this line
+// return message;
+// }
+
+// console.log(getShippingCost("Australia"));
+// console.log(getShippingCost("Germany"));
+// console.log(getShippingCost("China"));
+// console.log(getShippingCost("Chile"));
+// console.log(getShippingCost("Jamaica"));
+// console.log(getShippingCost("Sweden"));
+
+// function getNameLength(name) {
+// const message = `Name ${name} is ${name.length} characters // long`; // Change this line
+
+// return message;
+// }
+// console.log(getNameLength("Poly"));
+// console.log(getNameLength("Harambe"));
+// console.log(getNameLength("Billy"));
+// console.log(getNameLength("Joe"));
+
+const courseTopic = "JavaScript essentials";
+// Change code below this line
+
+const courseTopicLength = courseTopic;
+const firstElement = courseTopic;
+const lastElement = courseTopic;
+
+// Change code above this line
+
+console.log(courseTopic);
+console.log(courseTopicLength.length);
+console.log(firstElement[0]);
+console.log(lastElement[20]);
