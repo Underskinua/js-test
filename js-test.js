@@ -344,3 +344,66 @@
 // console.log(checkPassword("jqueryismyjam"));
 // console.log(checkPassword("angul4r1sl1f3"));
 // console.log(checkPassword("r3actsux"));
+
+// function getSubscriptionPrice(type) {
+// let price;
+// Change code below this line
+
+// switch (
+// type // Change this line
+// ) {
+// case "starter": // Change this line
+// price = 0; // Change this line
+// break;
+
+// case "professional": // Change this line
+// price = 20; // Change this line
+// break;
+
+// case "organization": // Change this line
+// price = 50; // Change this line
+// break;
+// }
+
+// Change code above this line
+// return price;
+// }
+
+// console.log(getSubscriptionPrice("professional"));
+// console.log(getSubscriptionPrice("organization"));
+// console.log(getSubscriptionPrice("starter"));
+
+function checkPassword(password) {
+  const ADMIN_PASSWORD = "jqueryismyjam";
+  let message;
+  // Change code below this line
+
+  // if (password === null) {
+  // message = "Canceled by user!";
+  // } else if (password === ADMIN_PASSWORD) {
+  // message = "Welcome!";
+  // } else {
+  // message = "Access denied, wrong password!";
+  // }
+
+  //=======================
+  switch (password) {
+    case "Canceled by user!":
+      value === null;
+      break;
+
+    case "Welcome!":
+      value === ADMIN_PASSWORD;
+      break;
+    case "Access denied, wrong password!":
+      // value === !ADMIN_PASSWORD;
+      break;
+  }
+  // Change code above this line
+  return message;
+}
+
+console.log(checkPassword("mangohackzor"));
+console.log(checkPassword(null));
+console.log(checkPassword("polyhax"));
+console.log(checkPassword("jqueryismyjam"));
