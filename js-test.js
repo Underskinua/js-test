@@ -461,8 +461,7 @@ const firstElement = courseTopic;
 const lastElement = courseTopic;
 
 // Change code above this line
-
 console.log(courseTopic);
-console.log(courseTopicLength.length);
-console.log(firstElement[0]);
-console.log(lastElement[20]);
+console.log(courseTopic[courseTopic.length]);
+console.log(courseTopic[courseTopic.length - 21]);
+console.log(courseTopic[courseTopic.length - 1]);
