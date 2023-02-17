@@ -453,15 +453,46 @@
 // console.log(getNameLength("Billy"));
 // console.log(getNameLength("Joe"));
 
-const courseTopic = "JavaScript essentials";
-// Change code below this line
+// const courseTopic = "JavaScript essentials";
 
-const courseTopicLength = courseTopic;
-const firstElement = courseTopic;
-const lastElement = courseTopic;
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
 
-// Change code above this line
-console.log(courseTopic);
-console.log(courseTopic[courseTopic.length]);
-console.log(courseTopic[courseTopic.length - 21]);
-console.log(courseTopic[courseTopic.length - 1]);
+// console.log(courseTopic);
+
+// const productName = "Repair droid";
+// console.log(productName.slice(0, 4)); // "Repa"
+// console.log(productName.slice(3, 9)); // "air dr"
+// console.log(productName.slice(0, productName.length)); // "Repair droid"
+// console.log(productName.slice(7, productName.length)); // "droid"
+// function getSubstring(string, length) {
+// const substring = string.slice(0, length); // Change this line
+
+// return substring;
+// }
+// console.log(getSubstring("Hello world", 3));
+// console.log(getSubstring("Hello world", 6));
+// console.log(getSubstring("Hello world", 8));
+// console.log(getSubstring("Hello world", 11));
+// console.log(getSubstring("Hello world", 0));
+
+function formatMessage(message, maxLength) {
+    let result = message.slice(0, maxLength);
+    let resultTwo = result + max;
+    let max = "...";
+
+  // Change code below this line
+    switch () {
+        case message.slice
+    }
+    /// Change code above this line
+    return result;
+}
+
+console.log(formatMessage("Curabitur ligula sapien", 16));
+console.log(formatMessage("Curabitur ligula sapien", 23));
+console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+console.log(formatMessage("Vestibulum facilisis purus nec", 30));
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
