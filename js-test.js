@@ -147,7 +147,6 @@
 // let c = 15;
 // let d = 20;
 
-// Change code below this line
 // a += 2;
 // b -= 4;
 // c *= 3;
@@ -304,7 +303,7 @@
 // console.log(getDiscount(50000));
 
 /// function checkStorage(available, ordered) {
-// Change code below this line
+
 /// let message;
 // удаляем===
 // if (ordered > available) {
@@ -319,7 +318,7 @@
 ///   ? "Not enough goods in stock!"
 ///   : "The order is accepted, our manager will contact you";
 
-// Change code above this line
+// 
 /// return message;
 /// }
 
@@ -332,12 +331,12 @@
 // function checkPassword(password) {
 // const ADMIN_PASSWORD = "jqueryismyjam";
 // let message;
-// Change code below this line
+// 
 // message =
 // password === "jqueryismyjam"
 // ? "Access is allowed"
 // : "Access denied, wrong password!";
-// Change code above this line
+// 
 // return message;
 // }
 
@@ -347,7 +346,6 @@
 
 // function getSubscriptionPrice(type) {
 // let price;
-// Change code below this line
 
 // switch (
 // type // Change this line
@@ -365,7 +363,6 @@
 // break;
 // }
 
-// Change code above this line
 // return price;
 // }
 
@@ -376,7 +373,6 @@
 // function checkPassword(password) {
 // const ADMIN_PASSWORD = "jqueryismyjam";
 // let message;
-// Change code below this line
 
 // if (password === null) {
 // message = "Canceled by user!";
@@ -399,7 +395,7 @@
 // default:
 // message = "Access denied, wrong password!";
 // }
-// Change code above this line
+// /
 // return message;
 // }
 
@@ -410,7 +406,7 @@
 
 // function getShippingCost(country) {
 // let message;
-// Change code below this line
+//
 
 // switch (country) {
 // case "China":
@@ -432,7 +428,7 @@
 // default:
 // message = "Sorry, there is no delivery to your country";
 // }
-// Change code above this line
+// 
 // return message;
 // }
 
@@ -466,6 +462,8 @@
 // console.log(productName.slice(3, 9)); // "air dr"
 // console.log(productName.slice(0, productName.length)); // "Repair droid"
 // console.log(productName.slice(7, productName.length)); // "droid"
+
+//========
 // function getSubstring(string, length) {
 // const substring = string.slice(0, length); // Change this line
 
@@ -477,22 +475,79 @@
 // console.log(getSubstring("Hello world", 11));
 // console.log(getSubstring("Hello world", 0));
 
-function formatMessage(message, maxLength) {
-    let result = message.slice(0, maxLength);
-    let resultTwo = result + max;
-    let max = "...";
+//===========================
+// Обрезать слова и вставить в конце ... 
+// function formatMessage(message, maxLength) {
+//     let result = message.slice(0, maxLength);
 
-  // Change code below this line
-    switch () {
-        case message.slice
-    }
-    /// Change code above this line
-    return result;
-}
+//     result = 
+//     message.length > maxLength 
+//         ? result = message.slice(0, maxLength) + "..."
+//         : result = message.slice(0, maxLength);
+       
+//     return result;
+//   }
+  
+  
+//   console.log(formatMessage("Curabitur ligula sapien", 23));
+//   console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+//   console.log(formatMessage("Vestibulum facilisis purus nec", 30));
+  
+//   console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+//   console.log(formatMessage("Curabitur ligula sapien", 16));
+//   console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+  //==============================
+  // Функція normalizeInput(input) приймає рядок (параметр input) і повертає такий самий рядок, але в нижньому регістрі. Присвой змінній normalizedInput вираз створення рядка у нижньому регістрі з параметра input.
+// function normalizeInput(input) {
+//     const normalizedInput = input.toLowerCase(); // Change this line
+  
+//     return normalizedInput;
+//   }
+  
+//   console.log(normalizeInput("Hello world"));
+//   console.log(normalizeInput("This ISN'T SpaM"));
+//   console.log(normalizeInput("Big SALE")); 
 
-console.log(formatMessage("Curabitur ligula sapien", 16));
-console.log(formatMessage("Curabitur ligula sapien", 23));
-console.log(formatMessage("Vestibulum facilisis purus nec", 20));
-console.log(formatMessage("Vestibulum facilisis purus nec", 30));
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
-console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+//===============
+// Функція checkForName(fullname, name) приймає два параметри та повертає буль true або false - результат перевірки входження підрядка name у рядок fullname.
+// fullname - повне ім'я, що складається з двох слів (імені та прізвища), розділених пробілом.
+// name - ім'я для перевірки входження в повне ім'я.
+// Присвой змінній result вираз перевірки входження імені (параметр name), у повне ім'я (параметр fullname). Нехай функція чітко розрізняє регістр літер, тобто «Петя» і «петя» - для неї різні імена.
+
+// function checkForName(fullName, name) {
+//     const result = name.includes("E") || name.includes("V"); 
+ 
+//      return result;
+//    }
+   
+//    console.log(checkForName.includes("Egor Kolbasov", "Egor"));
+//    console.log(checkForName.includes("Egor Kolbasov", "egor"));
+//    console.log(checkForName.includes("Egor Kolbasov", "egOr"));
+//    console.log(checkForName.includes("Egor Kolbasov", "Zhenya"));
+//    console.log(checkForName.includes("Vadim Nekrasov", "Vadim"));
+//    console.log(checkForName.includes("Vadim Nekrasov", "vadim"));
+//    console.log(checkForName.includes("Vadim Nekrasov", "Dima"));
+   
+//============================
+// Функція checkForSpam(message) приймає рядок (параметр message), перевіряє його на вміст заборонених слів spam і sale, і повертає результат перевірки. Слова в рядку параметра message можуть бути у довільному регістрі, наприклад SPAM або sAlE.
+
+// Якщо знайшли заборонене слово (spam або sale) то функція повертає буль true.
+// Якщо в рядку відсутні заборонені слова, функція повертає буль false.
+
+// function checkForSpam(message) {
+//     let result;
+    
+//   result = message.toLowerCase().includes("sale") || message.toLowerCase().includes("spam");
+    
+//     return result;
+//   }
+  
+//   console.log(checkForSpam("Latest technology news"));
+//   console.log(checkForSpam("JavaScript weekly newsletter"));
+//   console.log(checkForSpam("Get best sale offers now!"));
+//   console.log(checkForSpam("Amazing SalE, only tonight!"));
+//   console.log(checkForSpam("Trust me, this is not a spam message"));
+//   console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!"));
+//   console.log(checkForSpam("[SPAM] How to earn fast money?"));
+
+// ====================
