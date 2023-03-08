@@ -551,3 +551,119 @@
 //   console.log(checkForSpam("[SPAM] How to earn fast money?"));
 
 // ====================
+
+// function checkAge(age) {
+//   if (age >= 18) { // Change this line
+//     return "You are an adult";
+//   }
+
+//   return "You are a minor";
+// }
+
+// console.log(checkAge(20));
+// console.log(checkAge(8));
+// console.log(checkAge(14));
+// console.log(checkAge(38));
+
+//================================
+
+// Функція checkPassword отримує пароль користувача у параметр password, перевіряє його на збіг з паролем адміністратора у змінній ADMIN_PASSWORD і повертає повідомлення про результат порівняння.
+// Виконай рефакторинг коду функції checkPassword, використовуючи патерн «раннє повернення»:
+
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+  
+//    if (password === ADMIN_PASSWORD) {
+//     message =  "Welcome!"; - change on return
+//   } 
+//     message =  "Access denied, wrong password!"; - change on return
+//   }
+
+// return: message; - deleted
+
+// FIXED CODE
+//========
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+  
+//    if (password === ADMIN_PASSWORD) {
+//     return "Welcome!";
+//   } 
+//     return "Access denied, wrong password!";
+//   }
+
+  
+// console.log(checkPassword("mangohackzor"));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
+
+//===================================
+// function checkStorage(available, ordered) {
+//   // Change code below this line
+//   let message;
+
+//   if (ordered === 0) {
+//     message = "Your order is empty!";
+//   } else if (ordered > available) {
+//     message = "Your order is too large, not enough goods in stock!";
+//   } else {
+//     message = "The order is accepted, our manager will contact you";
+//   }
+
+//   return message;
+//   // Change code above this line
+// }
+
+// function checkStorage(available, ordered) {
+        
+//     if (ordered === 0) {
+//       return "Your order is empty!";
+//     }
+    
+//     if (ordered > available) {
+//       return "Your order is too large, not enough goods in stock!";
+//     } 
+//       return "The order is accepted, our manager will contact you";
+//     }
+  
+ 
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
+// console.log(checkStorage(70, 0));
+// console.log(checkStorage(200, 20));
+// console.log(checkStorage(200, 250));
+// console.log(checkStorage(150, 0));
+
+//=====================
+// const fruits = ["apple", "plum", "pear", "orange"];
+// const firstElement = fruits;
+// const secondElement = fruits;
+// const lastElement = fruits;
+
+// console.log(firstElement[0]);
+// console.log(secondElement[1]);
+// console.log(lastElement[3]);
+
+//Виконай перевизначення значення елементів з індексами 1 і 3. Заміни "plum" на "peach", а "orange" на "banana".
+
+// const fruits = ["apple", "plum", "pear", "orange"];
+// fruits[1] = "peach";
+// fruits[3] = "banana";
+
+// console.log(fruits);
+
+//Оголоси змінну fruitsArrayLength і присвой їй довжину масиву fruits, використовуючи властивість length. Answear   : 4;
+
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const fruitsArrayLength = fruits.length;
+
+// console.log(fruitsArrayLength);
+
+const fruits = ["apple", "peach", "pear", "banana"];
+const lastElementIndex = fruits.length -1;
+const lastElement = fruits[3];
+
+console.log(lastElementIndex);
+console.log(lastElement);
