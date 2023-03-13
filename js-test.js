@@ -601,7 +601,6 @@
 
 //===================================
 // function checkStorage(available, ordered) {
-//   // Change code below this line
 //   let message;
 
 //   if (ordered === 0) {
@@ -611,13 +610,10 @@
 //   } else {
 //     message = "The order is accepted, our manager will contact you";
 //   }
-
-//   return message;
-//   // Change code above this line
+//   return message;  
 // }
 
-// function checkStorage(available, ordered) {
-        
+// function checkStorage(available, ordered) {        
 //     if (ordered === 0) {
 //       return "Your order is empty!";
 //     }
@@ -661,9 +657,28 @@
 
 // console.log(fruitsArrayLength);
 
-const fruits = ["apple", "peach", "pear", "banana"];
-const lastElementIndex = fruits.length -1;
-const lastElement = fruits[3];
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const lastElementIndex = fruits.length -1;
+// const lastElement = fruits[lastElementIndex];
 
-console.log(lastElementIndex);
-console.log(lastElement);
+// console.log(lastElementIndex); // можно не писать
+// console.log(lastElement); // можно не писать
+
+//=============================================================
+//Напиши функцію getExtremeElements(array), яка приймає один параметр array - масив елементів довільної довжини. Функція повинна повертати масив з двох елементів - першого і останнього елемента параметра array.
+
+// Оголошена функція getExtremeElements(array)
+// Виклик getExtremeElements([1, 2, 3, 4, 5]) повертає [1, 5]
+// Виклик getExtremeElements(["Earth", "Mars", "Venus"]) повертає ["Earth", "Venus"]
+// Виклик getExtremeElements(["apple", "peach", "pear", "banana"]) повертає ["apple", "banana"]
+
+function getExtremeElements(array) {
+ 
+const getExtremeElements = array.length[0, -1] || array.length[0];
+
+return array;  
+}
+
+console.log(getExtremeElements([1, 2, 3, 4, 5]));
+console.log(getExtremeElements(["Earth", "Mars", "Venus"]));
+console.log(getExtremeElements(["apple", "peach", "pear", "banana"]));
